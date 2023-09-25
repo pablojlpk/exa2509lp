@@ -13,6 +13,19 @@
         android:theme="@style/Theme.Exa2509lp"
         tools:targetApi="31">
         <activity
+            android:name=".ui.gallery.DetalleA"
+            android:exported="false" />
+        <activity
+            android:name=".ui.gallery.MainActivitydetalle"
+            android:exported="false"
+            android:label="@string/title_activity_main_activitydetalle"
+            android:theme="@style/Theme.Exa2509lp" />
+        <activity
+            android:name=".ui.gallery.Detalle2"
+            android:exported="false"
+            android:label="@string/title_activity_detalle2"
+            android:theme="@style/Theme.Exa2509lp" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"

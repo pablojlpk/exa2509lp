@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_gallery">
 
     <fragment
         android:id="@+id/nav_home"
@@ -15,7 +15,21 @@
         android:id="@+id/nav_gallery"
         android:name="com.example.exa2509lp.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_detalle2"
+            app:destination="@id/nav_detalle" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_detalle"
+        android:name="com.example.exa2509lp.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_detalle" >
+        <action
+            android:id="@+id/action_nav_detalle_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_slideshow"
